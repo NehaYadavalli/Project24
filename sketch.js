@@ -51,9 +51,10 @@ function draw() {
 
   paper.display();
   
-  rect(700,370,100,20);
+  rectMode(CENTER);
+  rect(baseDus.position.x,baseDus.position.y,100,20);
 
-  keyPressed();
+
 
   drawSprites();
 
