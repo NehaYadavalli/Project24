@@ -32,8 +32,9 @@ function setup() {
 
 	paper = new Paper(50,350,14);
 
+	fill("white");
 	baseDus = Bodies.rectangle(700,350,100,20);
-	baseDus=color("white");
+	World.add(world,baseDus.bodies);
 
 	Engine.run(engine);
   
@@ -52,6 +53,7 @@ function draw() {
   paper.display();
   
   rectMode(CENTER);
+  fill("white");
   rect(baseDus.position.x,baseDus.position.y,100,20);
 
 
