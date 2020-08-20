@@ -16,6 +16,10 @@ function preload()
 function setup() {
 	createCanvas(800, 700);
 	rectMode(CENTER);
+	
+	var options = {
+          isStatic: true
+      }
 
 
 	engine = Engine.create();
@@ -32,9 +36,10 @@ function setup() {
 
 	paper = new Paper(50,350,14);
 
-	fill("white");
-	baseDus = Bodies.rectangle(700,350,100,20);
-	World.add(world,baseDus.bodies);
+	
+	
+	baseDus = Bodies.rectangle(700,350,100,20,options);
+	World.add(world,baseDus.body);
 
 	Engine.run(engine);
   
