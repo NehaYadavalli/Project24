@@ -17,9 +17,6 @@ function setup() {
 	createCanvas(800, 700);
 	rectMode(CENTER);
 	
-	var options = {
-          isStatic: true
-      }
 
 
 	engine = Engine.create();
@@ -38,7 +35,7 @@ function setup() {
 
 	
 	
-	baseDus = Bodies.rectangle(700,350,100,20,options);
+	baseDus = Bodies.rectangle(700,350,100,20);
 	World.add(world,baseDus.body);
 
 	Engine.run(engine);
