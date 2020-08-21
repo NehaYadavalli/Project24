@@ -36,7 +36,7 @@ function setup() {
 	
 	
 	baseDus = Bodies.rectangle(700,350,100,20);
-	World.add(world,baseDus.body);
+	World.add(world,baseDus);
 
 	Engine.run(engine);
   
