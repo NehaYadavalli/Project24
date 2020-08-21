@@ -33,9 +33,12 @@ function setup() {
 
 	paper = new Paper(50,350,14);
 
+	var options = {
+	isStatic: true
+	}
 	
 	
-	baseDus = Bodies.rectangle(700,350,100,20);
+	baseDus = Bodies.rectangle(700,350,100,20,options);
 	World.add(world,baseDus);
 
 	Engine.run(engine);
